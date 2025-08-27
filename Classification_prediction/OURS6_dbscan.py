@@ -85,7 +85,7 @@ def gnn_second_layer_aggregation(G, features_tensor, activation, device, communi
     return new_features
 
 class SDGNN_New(nn.Module):
-    def __init__(self, in_feats, hidden_dim, k=6, activation=F.relu):
+    def __init__(self, in_feats, hidden_dim, k=2, activation=F.relu):
         super(SDGNN_New, self).__init__()
         self.k = k
         self.activation = activation
@@ -252,6 +252,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(results)
     df['AvgTestAcc'] = df.groupby(['Dataset', 'Train (%)'])['TestAcc'].transform('mean')
-    df.to_excel("1OURS_results6_dbscan_layer6_cora.xlsx", index=False)
+    df.to_excel("1OURS_results6_dbscan.xlsx", index=False)
     print("Saved optimized results.")
     print(f"Total time: {time.time() - start_time:.2f}s")
