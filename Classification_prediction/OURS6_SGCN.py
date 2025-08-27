@@ -85,7 +85,7 @@ class SDGNN_SGC(nn.Module):
             subG = G_new.subgraph(neighbors)
             community_cache[v] = list(nx.connected_components(subG)) if neighbors else []
         enhanced_feats=propagated_feats
-        for layer in range(6):
+        for layer in range(1):
         # 4. 社区聚合 (新图)
             enhanced_feats = gnn_first_layer_aggregation(G_new, enhanced_feats, self.activation, device, community_cache)
         return enhanced_feats
@@ -189,5 +189,5 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(results)
     df["AvgAcc"] = df.groupby(["Dataset", "Train (%)"])["TestAcc"].transform("mean")
-    df.to_excel("1OURS_results6_sgc_layer6_cora.xlsx", index=False)
+    df.to_excel("1OURS_results6_sgc.xlsx", index=False)
     print("已保存结果")
