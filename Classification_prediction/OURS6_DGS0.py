@@ -248,6 +248,6 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(results)
     df['AvgTestAcc'] = df.groupby(['Dataset', 'Train (%)'])['TestAcc'].transform('mean')
-    df.to_excel("1OURS_results6_kmeans0_layer2.xlsx", index=False)
+    df.to_excel("1OURS_results6_kmeans0.xlsx", index=False)
     print("Saved optimized results.")
     print(f"Total time: {time.time() - start_time:.2f}s")
