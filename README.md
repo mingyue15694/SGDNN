@@ -22,7 +22,6 @@ SDGNN/
 │   ├── citeseer/
 │   ├── pubmed/
 │   └── ...
-│── src/
 │── README.md
 │── requirements.txt
 ```
