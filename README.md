@@ -52,12 +52,15 @@ SDGNN/
 
 If you use this code or dataset in your research, please cite:
 
-```
-@unpublished{kong2025parameterfree,
+```bibtex
+@article{kong2025parameterfree,
   title={Parameter-Free Structural-Diversity Message Passing for Graph Neural Networks},
-  author={Mingyue Kong and Yinglong Zhang and Chengda Xu and Xuewen Xia and Xing Xu},
-  note={Manuscript under review},
-  year={2025}
+  author={Kong, Mingyue and Zhang, Yinglong and Xu, Chengda and Xia, Xuewen and Xu, Xing},
+  journal={arXiv preprint arXiv:2508.19884},
+  year={2025},
+  doi={10.48550/arXiv.2508.19884},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
 }
 ```
 
