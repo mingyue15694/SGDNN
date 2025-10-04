@@ -48,6 +48,31 @@ SDGNN/
 
 ---
 
+## ⚙️ Experimental Environment & Reproducibility
+
+All experiments were conducted under the following environment to ensure reproducibility and transparency.
+
+| Component | Specification |
+|------------|---------------|
+| **Operating System** | Windows 10 (22H2) |
+| **GPU** | NVIDIA GeForce RTX 3090 |
+| **CPU** | Intel 64 Family 6 Model 151 Stepping 2 |
+| **RAM** | 128 GB |
+| **CUDA (PyTorch)** | 11.8 |
+| **Python** | 3.9.21 |
+| **PyTorch** | 2.4.0+cu118 |
+| **PyTorch Geometric (PyG)** | 2.6.1 |
+| **NumPy** | 1.26.4 |
+
+To further ensure reproducibility:
+- All random seeds are fixed in our training scripts (`torch`, `numpy`, and `random`).
+- The exact dependency versions are listed in `requirements.txt` and can be exported using:
+  ```bash
+  conda env export > environment.yml
+
+
+---
+
 ## 📖 Citation
 
 If you use this code or dataset in your research, please cite:
