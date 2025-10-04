@@ -64,12 +64,6 @@ All experiments were conducted under the following environment to ensure reprodu
 | **PyTorch Geometric (PyG)** | 2.6.1 |
 | **NumPy** | 1.26.4 |
 
-To further ensure reproducibility:
-- All random seeds are fixed in our training scripts (`torch`, `numpy`, and `random`).
-- The exact dependency versions are listed in `requirements.txt` and can be exported using:
-  ```bash
-  conda env export > environment.yml
-
 
 ---
 
